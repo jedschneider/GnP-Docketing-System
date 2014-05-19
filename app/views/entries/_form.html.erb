@@ -1,0 +1,57 @@
+<%= form_for(@entry) do |f| %>
+  <% if @entry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@entry.errors.count, "error") %> prohibited this entry from being saved:</h2>
+
+      <ul>
+      <% @entry.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :caseref %><br>
+    <%= f.text_field :caseref %>
+  </div>
+  <div class="field">
+    <%= f.label :country %><br>
+    <%= f.text_field :country %>
+  </div>
+  <div class="field">
+    <%= f.label :applicationNo %><br>
+    <%= f.text_field :applicationNo %>
+  </div>
+  <div class="field">
+    <%= f.label :applicationDate %><br>
+    <%= f.text_field :applicationDate %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :registrationNumber %><br>
+    <%= f.number_field :registrationNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :registrationDate %><br>
+    <%= f.text_field :registrationDate %>
+  </div>
+  <div class="field">
+    <%= f.label :InternationalClasses %><br>
+    <%= f.number_field :InternationalClasses %>
+  </div>
+  <div class="field">
+    <%= f.label :goodsAndServices %><br>
+    <%= f.text_field :goodsAndServices %>
+  </div>
+  <div class="field">
+    <%= f.label :caseStatus %><br>
+    <%= f.text_field :caseStatus %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

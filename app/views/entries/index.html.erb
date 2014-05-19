@@ -1,0 +1,45 @@
+<h1>Listing entries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Caseref</th>
+      <th>Country</th>
+      <th>Application No</th>
+      <th>Application Date</th>
+      <th>Title</th>
+      <th>Registration Number</th>
+      <th>Registration Date</th>
+      <th>International Classes</th>
+      <th>Goods/Services</th>
+      <th>Case Status</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @entries.each do |entry| %>
+      <tr>
+        <td><%= entry.caseref %></td>
+        <td><%= entry.country %></td>
+        <td><%= entry.applicationNo %></td>
+        <td><%= entry.applicationDate %></td>
+        <td><%= entry.title %></td>
+        <td><%= entry.registrationNumber %></td>
+        <td><%= entry.registrationDate %></td>
+        <td><%= entry.InternationalClasses %></td>
+        <td><%= entry.goodsAndServices %></td>
+        <td><%= entry.caseStatus %></td>
+        <td><%= link_to 'Show', entry %></td>
+        <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
+        <td><%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Entry', new_entry_path %>

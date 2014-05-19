@@ -1,0 +1,1 @@
+json.extract! @entry, :id, :caseref, :country, :applicationNo, :applicationDate, :title, :registrationNumber, :registrationDate, :InternationalClasses, :goodsAndServices, :caseStatus, :created_at, :updated_at

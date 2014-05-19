@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Caseref:</strong>
+  <%= @entry.caseref %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @entry.country %>
+</p>
+
+<p>
+  <strong>Applicationno:</strong>
+  <%= @entry.applicationNo %>
+</p>
+
+<p>
+  <strong>Applicationdate:</strong>
+  <%= @entry.applicationDate %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @entry.title %>
+</p>
+
+<p>
+  <strong>Registrationnumber:</strong>
+  <%= @entry.registrationNumber %>
+</p>
+
+<p>
+  <strong>Registrationdate:</strong>
+  <%= @entry.registrationDate %>
+</p>
+
+<p>
+  <strong>Internationalclasses:</strong>
+  <%= @entry.InternationalClasses %>
+</p>
+
+<p>
+  <strong>Goodsandservices:</strong>
+  <%= @entry.goodsAndServices %>
+</p>
+
+<p>
+  <strong>Casestatus:</strong>
+  <%= @entry.caseStatus %>
+</p>
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>

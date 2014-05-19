@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  caseref: MyString
+  country: MyString
+  applicationNo: MyString
+  applicationDate: MyString
+  title: MyString
+  registrationNumber: 1
+  registrationDate: MyString
+  InternationalClasses: 1
+  goodsAndServices: MyString
+  caseStatus: MyString
+
+two:
+  caseref: MyString
+  country: MyString
+  applicationNo: MyString
+  applicationDate: MyString
+  title: MyString
+  registrationNumber: 1
+  registrationDate: MyString
+  InternationalClasses: 1
+  goodsAndServices: MyString
+  caseStatus: MyString
