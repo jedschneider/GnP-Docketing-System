@@ -1,7 +1,11 @@
 GPDocketingSystem::Application.routes.draw do
 
+  devise_for :admins
   devise_for :users
-  resources :users
+  namespace :admin do
+    resources :entries
+    resources :users
+  end
 
   resources :entries
 
